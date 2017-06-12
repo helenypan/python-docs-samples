@@ -3,5 +3,14 @@ api_version: 1
 threadsafe: true
 
 handlers:
-- url: /.*
+- url: /
   script: main.app
+
+- url: /birthday
+  script: birthday_form.app
+
+- url: /thanks
+  script: birthday_form.app
+
+- url: /.*
+  script: not_found.app
